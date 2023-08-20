@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Backslash Remover</title>
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="JSON Backslash Remover">
+<meta name="description" content="Remove backslashes fofr JSON and beautify it">
+
+<link href="css/app.css" rel="stylesheet">
+<script src="js/app.js" ></script>
+</head>
+<body>
+  <div class="container">
+    <h1>JSON Backslash Remover</h1>
+    <div class="">
+    <textarea id="inputBox" class="textbox" placeholder="Enter JSON data with backslashes..."></textarea>
+    </div>
+    <div class="">
+    <button class="btn" onclick="removeBackslashes()">Remove Backslashes</button>
+    </div>
+    <div class="">
+    <textarea id="outputBox" class="output" placeholder="Output JSON data without backslashes..." readonly></textarea>
+    <button class="btn" onclick="beautifyJSON()">JSON Beautify</button>
+    </div>
+  </div>
+</body>
+</html>
+
