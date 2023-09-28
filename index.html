@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RVKFDVHKXG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVKFDVHKXG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RVKFDVHKXG');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JSON Backslash Remover</title>
-
-<!-- Primary Meta Tags -->
-<meta name="title" content="JSON Backslash Remover">
-<meta name="description" content="Remove backslashes fofr JSON and beautify it">
-
-<link href="css/app.css" rel="stylesheet">
-<script src="js/app.js" ></script>
+    gtag('config', 'G-RVKFDVHKXG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="JSON Backslash Remover">
+    <meta name="description" content="Remove backslashes fofr JSON and beautify it">
+    <title>JSON Backslash Remover</title>
+    <link href="css/app.css" rel="stylesheet">
+    <script src="js/app.js" ></script>
 </head>
 <body>
-  <div class="container">
-    <h1>JSON Backslash Remover</h1>
-    <div class="">
-    <textarea id="inputBox" class="textbox" placeholder="Enter JSON data with backslashes..."></textarea>
+    <header>
+        <h1>JSON Backslash Remover</h1>
+    </header>
+    <div class="container">
+        <textarea id="inputBox" class="textbox" placeholder="Enter JSON data with backslashes..."></textarea>
+        <button onclick="removeBackslashes()">Submit</button>
+        <textarea id="outputBox" rows=8 class="output" placeholder="Output JSON data without backslashes..." readonly></textarea>
+        <button onclick="beautifyJSON()">JSON Beautify</button>
     </div>
-    <div class="">
-    <button class="btn" onclick="removeBackslashes()">Remove Backslashes</button>
-    </div>
-    <div class="">
-    <textarea id="outputBox" class="output" placeholder="Output JSON data without backslashes..." readonly></textarea>
-    <button class="btn" onclick="beautifyJSON()">JSON Beautify</button>
-    </div>
-  </div>
+    <footer>
+        <p>Made with ❤️ by Sufiyan Malek | <a href="https://sufimalek.github.io/projects" target="_blank" >Source</a></p>
+    </footer>
 </body>
 </html>
-
